@@ -1,5 +1,5 @@
 # RentalManager
-Rental manager in Java (Maven is used to build)
+Rental manager in Java 11 (Maven is used to build)
 
 This program was made as project at university
 
