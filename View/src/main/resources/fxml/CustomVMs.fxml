@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomVMsController">
+    <children>
+        <Text layoutX="586.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Virtual Machines"/>
+        <TableView fx:id="table" layoutX="110.0" layoutY="100.0" prefHeight="435.0" prefWidth="1060.0">
+            <columns>
+                <TableColumn fx:id="informationColumn" prefWidth="75.0" text="Informations"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="🠔 Back"/>
+        <Text layoutX="110.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Custom VM:"/>
+        <Text layoutX="223.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OS:"/>
+        <TextField fx:id="osTextField" layoutX="246.0" layoutY="551.0" prefHeight="24.0" prefWidth="100.0"/>
+        <Text layoutX="364.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disk size:"/>
+        <TextField fx:id="diskSizeTextField" layoutX="415.0" layoutY="551.0" prefHeight="24.0" prefWidth="100.0"/>
+        <Text layoutX="530.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Threads:"/>
+        <TextField fx:id="threadsTextField" layoutX="578.0" layoutY="551.0" prefHeight="24.0" prefWidth="100.0"/>
+        <Text layoutX="697.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic price:"/>
+        <TextField fx:id="basicPriceTextField" layoutX="760.0" layoutY="551.0" prefHeight="24.0" prefWidth="100.0"/>
+        <Text layoutX="870.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GPU:"/>
+        <TextField fx:id="gpuTextField" layoutX="899.0" layoutY="550.0" prefHeight="24.0" prefWidth="100.0"/>
+        <Text layoutX="1006.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Snapshots:"/>
+        <TextField fx:id="snapshotsTextField" layoutX="1067.0" layoutY="551.0" prefHeight="24.0" prefWidth="32.0"/>
+        <Button fx:id="addButton" layoutX="1110.0" layoutY="551.0" mnemonicParsing="false" prefHeight="25.0"
+                prefWidth="60.0" text="Add"/>
+        <Text layoutX="110.0" layoutY="608.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete VM:"/>
+        <Text layoutX="209.0" layoutY="608.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VMID:"/>
+        <TextField fx:id="VMIDTextField" layoutX="246.0" layoutY="591.0" prefHeight="25.0" prefWidth="100.0"/>
+        <Button fx:id="deleteButton" layoutX="1110.0" layoutY="591.0" mnemonicParsing="false" prefHeight="25.0"
+                prefWidth="60.0" text="Delete"/>
+    </children>
+</AnchorPane>
